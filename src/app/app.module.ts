@@ -20,7 +20,7 @@ import { ToolbarComponent } from './layout/toolbar/toolbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,ToolbarComponent
+    DashboardComponent, ToolbarComponent
   ],
   imports: [
     BrowserModule,

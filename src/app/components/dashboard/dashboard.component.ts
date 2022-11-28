@@ -19,7 +19,13 @@ export class DashboardComponent implements OnInit {
     this.chartService.createChartCircle()
     this.chartService.createChartPolarArea()
     this.chartService.createChartBar2()
+  
+    
   }
+
+  
+
+
 
 
 

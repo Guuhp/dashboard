@@ -9,7 +9,10 @@ export class ChartService {
   constructor() { }
   chart: any
 
-  createChartBar() {
+  getRandomInt(max: number) {
+    return Math.floor(Math.random() * max);
+  }
+    createChartBar() {
     this.chart = new Chart("MyChartBar", {
       type: 'bar', //this denotes tha type of chart
 

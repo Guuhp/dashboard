@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -15,14 +16,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ToolbarComponent } from './layout/toolbar/toolbar.component';
-import { LayoutComponent } from './layout/layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    ToolbarComponent, 
-    LayoutComponent
+    DashboardComponent,ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +34,10 @@ import { LayoutComponent } from './layout/layout/layout.component';
     LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule, MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,8 @@
+.bar2{
+    background-color: white;
+    width: 33%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

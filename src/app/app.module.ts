@@ -14,13 +14,24 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { ToolbarComponent } from './layout/toolbar/toolbar.component';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { LineChartComponent } from './components/line-chart/line-chart.component';
+import { CircleChartComponent } from './components/circle-chart/circle-chart.component';
+import { PolarAreaChartComponent } from './components/polar-area-chart/polar-area-chart.component';
+import { BarChart2Component } from './components/bar-chart2/bar-chart2.component';
+import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent, ToolbarComponent
+    BarChartComponent,
+    LineChartComponent,
+    CircleChartComponent,
+    PolarAreaChartComponent,
+    BarChart2Component,
+    DashboardComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

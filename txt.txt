@@ -1,19 +1,97 @@
-map(({ matches }) => {
-      if (matches) {
-        return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { grafico1: 'MyChartBar', grafico2: 'MyChartLine', grafico3: 'MyChartCircle' }
+<div class="container">
+   
 
-        ];
-      }
+    <div class="header-content-below" cols="1">
+        <div class="bar1">
+            <canvas id="MyChartCircle">{{chart}}</canvas>
+        </div>
+        <div class="bar2">
+            <canvas id="MyChartPolarArea">{{chart}}</canvas>
+        </div>
+        <div class="bar3">
+            <canvas id="MyChartBar2">{{chart}}</canvas>
+        </div>
+    </div>
+</div>
 
-      return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { grafico1: 'MyChartBar', grafico2: 'MyChartLine', grafico3: 'MyChartCircle' }
+<!-- <div class="grafico1">
+    <canvas #meuCanvas></canvas>
+</div>
+<div class="grafico2">
+    <canvas id="MyChart">{{ chart }}</canvas>
+</div>
 
-      ];
-    })
+<div class="grafico2">
+    <canvas id="MyChartArea">{{ chart }}</canvas>
+</div>
+
+<div class="grafico2">
+    <canvas id="MyChartBar">{{ chart }}</canvas>
+</div> -->
+
+=================================================================================
+
+.container{
+  background-color: #282a36;
+  height: 100%;
+  width: 100%;
+
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+}
+
+.grafico1 {
+  background-color: white;
+  height: 300px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.grafico2 {
+  background-color: white;
+  height: 300px;
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content-below{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.bar1{
+  background-color: white;
+  width: 33%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar2{
+  background-color: white;
+  width: 33%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar3{
+  background-color: white;
+  width: 33%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

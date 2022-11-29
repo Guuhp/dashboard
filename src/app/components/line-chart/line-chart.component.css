@@ -1,0 +1,8 @@
+.grafico2 {
+    background-color: white;
+    height: 300px;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

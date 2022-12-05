@@ -1,0 +1,51 @@
+.container {
+    background-color: #191622;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    grid-template-areas:
+        "n n"
+        "h h"
+        "h h";
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.charts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.table {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+
+}
+
+
+nav {
+    background-color: #33333e8f;
+    grid-area: n;
+}
+
+header {
+    background-color: #191622;
+    grid-area: h;
+}
+
+main {
+    background-color: springgreen;
+    grid-area: m;
+}

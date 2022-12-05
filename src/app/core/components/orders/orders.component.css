@@ -1,0 +1,18 @@
+.example-card {
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+mat-card-title{
+    color: rgb(0, 0, 0);
+}
